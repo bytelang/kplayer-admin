@@ -16,10 +16,10 @@
       </template>
       <template v-slot:item.action="{item}" class="action">
         <v-row>
-          <v-col cols="2">
+          <v-col cols="2" md="3">
             <v-btn size="small" color="info" @click="preview(item)">查看</v-btn>
           </v-col>
-          <v-col cols="2">
+          <v-col cols="2" md="3">
             <v-btn size="small" color="error" @click="remove(item)">删除</v-btn>
           </v-col>
         </v-row>
