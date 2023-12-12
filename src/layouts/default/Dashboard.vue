@@ -1,9 +1,13 @@
 <template>
   <v-app>
-    <v-container fluid class="mx-2 my-2" style="height:100vh">
+    <v-container fluid style="height:100vh; padding: 0;">
       <v-row>
-        <AppBar class="app-bar"/>
-        <router-view class="content"/>
+        <v-col cols="2">
+          <AppBar class="app-bar"/>
+        </v-col>
+        <v-col cols="10">
+          <router-view class="content"/>
+        </v-col>
       </v-row>
     </v-container>
   </v-app>
@@ -16,17 +20,14 @@ import AppBar from './AppBar.vue'
 <style lang="less">
 .container {
   height: 100vh;
-  display: flex;
 }
 
 .app-bar {
   padding-right: 1rem;
-  flex: 1;
   height: 100vh;
 }
 
 .content {
   padding-left: 1rem;
-  flex: 6;
 }
 </style>

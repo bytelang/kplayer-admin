@@ -1,15 +1,5 @@
 <template>
   <div>
-    <div class="text-center">
-      <v-btn
-        :disabled="loading"
-        append-icon="mdi-refresh"
-        text="Refresh"
-        variant="outlined"
-        @click="onClick"
-      ></v-btn>
-    </div>
-
     <v-data-table :loading="loading" :items="items" :headers="headers">
       <template v-slot:loading>
         <v-skeleton-loader type="table-row@10"></v-skeleton-loader>
