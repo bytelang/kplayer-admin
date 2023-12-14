@@ -38,7 +38,7 @@
       <tbody>
       <tr>
         <td>实例名称:</td>
-        <td colspan="3">{{ instance_name }}</td>
+        <td colspan="3">{{ current_media.media.name }}</td>
       </tr>
       <tr>
         <td>媒体路径:</td>
